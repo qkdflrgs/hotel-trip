@@ -1,4 +1,4 @@
-import { css } from '@emotion/react'
+import { css, SerializedStyles } from '@emotion/react'
 import Flex from './Flex'
 import Skeleton from './Skeleton'
 import Spacing from './Spacing'
@@ -9,6 +9,7 @@ interface ListRowProps {
   contents: React.ReactNode
   right?: React.ReactNode
   withArrow?: boolean
+  style?: SerializedStyles
   onClick?: () => void
   as?: 'div' | 'li'
 }
@@ -19,18 +20,19 @@ function ListRow({
   contents,
   right,
   withArrow = false,
+  style,
   onClick,
 }: ListRowProps) {
   return (
     <Flex
       as={as}
       align={'center'}
-      css={listRowContainerStyles}
+      css={[listRowContainerStyles, style]}
       onClick={onClick}
     >
-      <Flex css={listRowLeftStyles}>{left}</Flex>
+      {left && <Flex css={listRowLeftStyles}>{left}</Flex>}
       <Flex css={listRowContentsStyles}>{contents}</Flex>
-      <Flex>{right}</Flex>
+      {right && <Flex>{right}</Flex>}
       {withArrow && <IconArrowRight />}
     </Flex>
   )
