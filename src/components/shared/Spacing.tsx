@@ -1,12 +1,14 @@
+import { Colors, colors } from '@styles/colorPalette'
 import styled from '@emotion/styled'
 
 interface SpacingProps {
   size: number
   direction?: 'vertical' | 'horizontal'
+  backgroundColor?: Colors
 }
 
 const Spacing = styled.div<SpacingProps>`
-  ${({ size, direction = 'vertical' }) =>
+  ${({ size, direction = 'vertical', backgroundColor }) =>
     direction === 'vertical'
       ? `
     height: ${size}px;
@@ -14,6 +16,9 @@ const Spacing = styled.div<SpacingProps>`
       : `
       width: ${size}px;
       `}
+
+  ${({ backgroundColor }) =>
+    backgroundColor && `background-color: ${colors[backgroundColor]};`}
 `
 
 export default Spacing
