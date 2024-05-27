@@ -5,7 +5,12 @@
       "@/*": ["src/*"],
       "@components/*": ["src/components/*"],
       "@styles/*": ["src/styles/*"],
-      "@shared/*": ["src/components/shared/*"]
+      "@shared/*": ["src/components/shared/*"],
+      "@pages/*": ["src/pages/*"],
+      "@mock/*": ["src/mock/*"],
+      "@remote/*": ["src/remote/*"],
+      "@constants/*": ["src/constants/*"],
+      "@constants": ["src/constants/index"]
     }
   }
 }
