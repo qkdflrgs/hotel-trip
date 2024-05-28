@@ -5,6 +5,7 @@ import useHotel from '@components/hotel/hooks/useHotel'
 import Top from '@shared/Top'
 import { useParams } from 'react-router-dom'
 import Map from '@components/hotel/Map'
+import RecommendHotels from '@/components/hotel/RecommendHotels'
 
 function HotelPage() {
   const { id } = useParams() as { id: string }
@@ -19,6 +20,7 @@ function HotelPage() {
       <Rooms hotelId={hotel.id} />
       <Contents contents={hotel.contents} />
       <Map location={hotel.location} />
+      <RecommendHotels hotelIds={hotel.recommendHotel} />
     </div>
   )
 }

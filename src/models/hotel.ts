@@ -28,4 +28,5 @@ export interface Hotel {
   price: number
   starRating: number
   events?: Event
+  recommendHotel: string[]
 }
