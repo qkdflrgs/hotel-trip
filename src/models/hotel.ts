@@ -6,6 +6,17 @@ type Location = {
   }
 }
 
+type Event = {
+  name: string
+  promoEndTime?: string
+  tagThemeStyle: TagThemeStyle
+}
+
+type TagThemeStyle = {
+  backgroundColor: string
+  color: string
+}
+
 export interface Hotel {
   comment: string
   contents: string
@@ -16,4 +27,5 @@ export interface Hotel {
   name: string
   price: number
   starRating: number
+  events?: Event
 }
