@@ -15,7 +15,9 @@ const Tag = styled.span<TagProps>(
     textAlign: 'center',
     color: color in colors ? colors[color as Colors] : color,
     backgroundColor:
-      backgroundColor in colors ? colors[color as Colors] : backgroundColor,
+      backgroundColor in colors
+        ? colors[backgroundColor as Colors]
+        : backgroundColor,
   }),
 )
 
