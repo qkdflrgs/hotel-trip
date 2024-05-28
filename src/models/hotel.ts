@@ -1,4 +1,4 @@
-type Location = {
+export type Location = {
   directions: string
   pointGeolocation: {
     x: number
