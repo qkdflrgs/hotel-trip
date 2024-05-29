@@ -52,6 +52,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-prettier", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:5.1.3"],\
           ["eslint-plugin-react", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:7.34.1"],\
           ["firebase", "npm:10.12.1"],\
+          ["package", "npm:1.0.1"],\
           ["prettier", "npm:3.2.5"],\
           ["react", "npm:18.3.1"],\
           ["react-copy-to-clipboard", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:5.1.0"],\
@@ -12199,6 +12200,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-prettier", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:5.1.3"],\
           ["eslint-plugin-react", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:7.34.1"],\
           ["firebase", "npm:10.12.1"],\
+          ["package", "npm:1.0.1"],\
           ["prettier", "npm:3.2.5"],\
           ["react", "npm:18.3.1"],\
           ["react-copy-to-clipboard", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:5.1.0"],\
@@ -15836,6 +15838,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/p-try-npm-2.2.0-e0390dbaf8-10c0.zip/node_modules/p-try/",\
         "packageDependencies": [\
           ["p-try", "npm:2.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["package", [\
+      ["npm:1.0.1", {\
+        "packageLocation": "../../../.yarn/berry/cache/package-npm-1.0.1-61d3a5240e-10c0.zip/node_modules/package/",\
+        "packageDependencies": [\
+          ["package", "npm:1.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
