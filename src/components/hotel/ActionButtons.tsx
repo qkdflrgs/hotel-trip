@@ -4,6 +4,7 @@ import Flex from '@shared/Flex'
 import Text from '@shared/Text'
 import { css } from '@emotion/react'
 import CopyToClipboard from 'react-copy-to-clipboard'
+import useLike from '@hooks/like/useLike'
 
 interface ActionButtonProps {
   label: string
@@ -17,13 +18,27 @@ interface ActionButtonsProps {
 
 function ActionButtons({ hotel }: ActionButtonsProps) {
   const share = useShare()
+  const { data: likes, mutate: like } = useLike()
+  const isLike = Boolean(likes?.find((like) => like.hotelId === hotel.id))
 
   return (
     <Flex css={containerStyles}>
       <ActionButton
         label="찜하기"
-        iconUrl="https://cdn4.iconfinder.com/data/icons/twitter-29/512/166_Heart_Love_Like_Twitter-512.png"
-        onClick={() => {}}
+        iconUrl={
+          isLike
+            ? 'https://cdn4.iconfinder.com/data/icons/twitter-29/512/166_Heart_Love_Like_Twitter-512.png'
+            : 'https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-heart-outline-512.png'
+        }
+        onClick={() => {
+          like({
+            hotel: {
+              name: hotel.name,
+              mainImageUrl: hotel.mainImageUrl,
+              id: hotel.id,
+            },
+          })
+        }}
       />
       <ActionButton
         label="공유하기"
