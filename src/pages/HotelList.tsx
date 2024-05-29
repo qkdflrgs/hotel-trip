@@ -4,9 +4,11 @@ import HotelBox from '@components/hotelList/HotelBox'
 import { Fragment } from 'react'
 import Spacing from '@shared/Spacing'
 import InfiniteScroll from 'react-infinite-scroll-component'
+import useLike from '@hooks/like/useLike'
 
 function HotelListPage() {
   const { data: hotels, hasNextPage, loadMore } = useHotels()
+  const { data: likes, mutate: like } = useLike()
 
   return (
     <div>
@@ -21,7 +23,13 @@ function HotelListPage() {
         <ul>
           {hotels?.map((hotel, index) => (
             <Fragment key={hotel.id}>
-              <HotelBox hotel={hotel} />
+              <HotelBox
+                hotel={hotel}
+                isLike={Boolean(
+                  likes?.find((like) => like.hotelId === hotel.id),
+                )}
+                onLike={like}
+              />
               {hotels.length - 1 === index ? null : (
                 <Spacing
                   size={8}
