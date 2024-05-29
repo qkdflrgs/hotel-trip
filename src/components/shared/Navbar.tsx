@@ -4,9 +4,10 @@ import { Link, useLocation } from 'react-router-dom'
 import Button from './Button'
 import Flex from './Flex'
 import { useCallback } from 'react'
+import useUser from '@hooks/auth/useUser'
 
 function Navbar() {
-  const user = null
+  const user = useUser()
   const location = useLocation()
   const showSignButton =
     ['/signup', '/signin'].includes(location.pathname) === false
@@ -15,14 +16,23 @@ function Navbar() {
     if (user != null) {
       return (
         <Link to="/my">
-          <img src="" alt="" />
+          <img
+            src={
+              user.photoURL ??
+              'https://cdn4.iconfinder.com/data/icons/music-ui-solid-24px/24/user_account_profile-2-512.png'
+            }
+            alt="유저 프로필 이미지"
+            width={40}
+            height={40}
+            style={{ borderRadius: '100%' }}
+          />
         </Link>
       )
     }
 
     if (showSignButton) {
       return (
-        <Link to="/signup">
+        <Link to="/signin">
           <Button>로그인/회원가입</Button>
         </Link>
       )

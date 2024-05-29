@@ -4,7 +4,7 @@ import ListRow from '@shared/ListRow'
 import Spacing from '@shared/Spacing'
 import useRecommendHotels from './hooks/useRecommendHotels'
 import { css } from '@emotion/react'
-import addDelimiter from '@/utils/addDelimiter'
+import addDelimiter from '@utils/addDelimiter'
 import { useState } from 'react'
 import Button from '../shared/Button'
 

@@ -5,8 +5,8 @@ import useHotel from '@components/hotel/hooks/useHotel'
 import Top from '@shared/Top'
 import { useParams } from 'react-router-dom'
 import Map from '@components/hotel/Map'
-import RecommendHotels from '@/components/hotel/RecommendHotels'
-import ActionButtons from '@/components/hotel/ActionButtons'
+import RecommendHotels from '@components/hotel/RecommendHotels'
+import ActionButtons from '@components/hotel/ActionButtons'
 
 function HotelPage() {
   const { id } = useParams() as { id: string }
