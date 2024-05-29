@@ -1,4 +1,4 @@
-import { getRecommendHotels } from '@/remote/hotel'
+import { getRecommendHotels } from '@remote/hotel'
 import { useQuery } from 'react-query'
 
 function useRecommendHotels({ hotelIds }: { hotelIds: string[] }) {
