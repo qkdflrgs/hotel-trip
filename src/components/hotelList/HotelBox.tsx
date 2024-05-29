@@ -6,16 +6,22 @@ import Spacing from '@shared/Spacing'
 import { css } from '@emotion/react'
 import addDelimiter from '@utils/addDelimiter'
 import Tag from '@shared/Tag'
-import { useEffect, useState } from 'react'
+import { MouseEvent, useEffect, useState } from 'react'
 import { differenceInMilliseconds, parseISO } from 'date-fns'
 import formatTime from '@utils/formatTime'
 import { Link } from 'react-router-dom'
 
 interface HotelProps {
   hotel: Hotel
+  isLike: boolean
+  onLike: ({
+    hotel,
+  }: {
+    hotel: Pick<Hotel, 'name' | 'id' | 'mainImageUrl'>
+  }) => void
 }
 
-function HotelBox({ hotel }: HotelProps) {
+function HotelBox({ hotel, isLike, onLike }: HotelProps) {
   const [remainedTime, setRemainedTime] = useState<number>(0)
 
   useEffect(() => {
@@ -61,6 +67,17 @@ function HotelBox({ hotel }: HotelProps) {
     )
   }
 
+  const handleLike = (e: MouseEvent<HTMLImageElement>) => {
+    e.preventDefault()
+    onLike({
+      hotel: {
+        name: hotel.name,
+        mainImageUrl: hotel.mainImageUrl,
+        id: hotel.id,
+      },
+    })
+  }
+
   return (
     <div>
       <Link to={`/hotel/${hotel.id}`}>
@@ -76,7 +93,21 @@ function HotelBox({ hotel }: HotelProps) {
             </Flex>
           }
           right={
-            <Flex direction="column" align="flex-end">
+            <Flex
+              direction="column"
+              align="flex-end"
+              style={{ position: 'relative' }}
+            >
+              <img
+                src={
+                  isLike
+                    ? 'https://cdn4.iconfinder.com/data/icons/twitter-29/512/166_Heart_Love_Like_Twitter-512.png'
+                    : 'https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-heart-outline-512.png'
+                }
+                alt="찜하기"
+                css={iconHeartStyles}
+                onClick={handleLike}
+              />
               <img
                 src={hotel.mainImageUrl}
                 alt="호텔 이미지"
@@ -103,6 +134,14 @@ const imageStyles = css`
   border-radius: 8px;
   object-fit: cover;
   margin-left: 16px;
+`
+
+const iconHeartStyles = css`
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 24px;
+  height: 24px;
 `
 
 export default HotelBox
