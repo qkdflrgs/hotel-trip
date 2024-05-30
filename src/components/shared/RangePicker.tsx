@@ -44,6 +44,9 @@ function RangePicker({ startDate, endDate, onChange }: RangePickerProps) {
         defaultMonth={today}
         onSelect={handleDayClick}
         selected={selected}
+        disabled={{
+          before: new Date(),
+        }}
       />
     </Container>
   )
@@ -91,6 +94,10 @@ const Container = styled.div`
     width: 100%;
     line-height: 45px;
     cursor: pointer;
+  }
+
+  .rdp-cell .rdp-button[disabled] {
+    color: ${colors.grey200};
   }
 
   .rdp-day_selected {
