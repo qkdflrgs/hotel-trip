@@ -7,7 +7,7 @@ import { useParams } from 'react-router-dom'
 import Map from '@components/hotel/Map'
 import RecommendHotels from '@components/hotel/RecommendHotels'
 import ActionButtons from '@components/hotel/ActionButtons'
-import Review from '@/components/hotel/Review'
+import Review from '@components/hotel/Review'
 
 function HotelPage() {
   const { id } = useParams() as { id: string }
