@@ -7,6 +7,7 @@ import {
   getDocs,
   orderBy,
   query,
+  setDoc,
 } from 'firebase/firestore'
 import { store } from './firebase'
 import { User } from '@models/user'
@@ -62,4 +63,11 @@ export async function getReviews({ hotelId }: { hotelId: string }) {
   }
 
   return results
+}
+
+export function writeReview(review: Omit<Review, 'id'>) {
+  const hotelRef = doc(store, COLLECTIONS.HOTEL, review.hotelId)
+  const reviewRef = doc(collection(hotelRef, COLLECTIONS.REVIEW))
+
+  return setDoc(reviewRef, review)
 }
