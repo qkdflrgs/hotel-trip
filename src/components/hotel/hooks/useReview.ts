@@ -1,5 +1,5 @@
 import useUser from '@hooks/auth/useUser'
-import { getReviews, writeReview } from '@remote/review'
+import { getReviews, removeReview, writeReview } from '@remote/review'
 import { useMutation, useQuery, useQueryClient } from 'react-query'
 
 function useReview({ hotelId }: { hotelId: string }) {
@@ -31,7 +31,18 @@ function useReview({ hotelId }: { hotelId: string }) {
     },
   )
 
-  return { data, isLoading, write }
+  const { mutate: remove } = useMutation(
+    ({ reviewId, hotelId }: { reviewId: string; hotelId: string }) => {
+      return removeReview({ reviewId, hotelId })
+    },
+    {
+      onSuccess: () => {
+        client.invalidateQueries(['reviews', hotelId])
+      },
+    },
+  )
+
+  return { data, isLoading, write, remove }
 }
 
 export default useReview
