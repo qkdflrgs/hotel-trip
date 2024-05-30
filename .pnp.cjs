@@ -41,6 +41,7 @@ const RAW_RUNTIME_STATE =
           ["@types/eslint", "npm:8.56.10"],\
           ["@types/jest", "npm:27.5.2"],\
           ["@types/node", "npm:16.18.97"],\
+          ["@types/qs", "npm:6.9.15"],\
           ["@types/react", "npm:18.3.3"],\
           ["@types/react-beautiful-dnd", "npm:13.1.8"],\
           ["@types/react-copy-to-clipboard", "npm:5.0.7"],\
@@ -54,6 +55,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-react", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:7.34.1"],\
           ["firebase", "npm:10.12.1"],\
           ["prettier", "npm:3.2.5"],\
+          ["qs", "npm:6.12.1"],\
           ["react", "npm:18.3.1"],\
           ["react-beautiful-dnd", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:13.1.1"],\
           ["react-copy-to-clipboard", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:5.1.0"],\
@@ -12244,6 +12246,7 @@ const RAW_RUNTIME_STATE =
           ["@types/eslint", "npm:8.56.10"],\
           ["@types/jest", "npm:27.5.2"],\
           ["@types/node", "npm:16.18.97"],\
+          ["@types/qs", "npm:6.9.15"],\
           ["@types/react", "npm:18.3.3"],\
           ["@types/react-beautiful-dnd", "npm:13.1.8"],\
           ["@types/react-copy-to-clipboard", "npm:5.0.7"],\
@@ -12257,6 +12260,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-react", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:7.34.1"],\
           ["firebase", "npm:10.12.1"],\
           ["prettier", "npm:3.2.5"],\
+          ["qs", "npm:6.12.1"],\
           ["react", "npm:18.3.1"],\
           ["react-beautiful-dnd", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:13.1.1"],\
           ["react-copy-to-clipboard", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:5.1.0"],\
@@ -18054,6 +18058,14 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/qs-npm-6.11.0-caf1bc9dea-10c0.zip/node_modules/qs/",\
         "packageDependencies": [\
           ["qs", "npm:6.11.0"],\
+          ["side-channel", "npm:1.0.6"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:6.12.1", {\
+        "packageLocation": "../../../.yarn/berry/cache/qs-npm-6.12.1-8172168073-10c0.zip/node_modules/qs/",\
+        "packageDependencies": [\
+          ["qs", "npm:6.12.1"],\
           ["side-channel", "npm:1.0.6"]\
         ],\
         "linkType": "HARD"\
