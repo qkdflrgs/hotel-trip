@@ -95,7 +95,7 @@ const Container = styled.div`
     line-height: 45px;
     cursor: pointer;
   }
-  
+
   .rdp-cell .rdp-button[disabled] {
     color: ${colors.grey200};
   }
