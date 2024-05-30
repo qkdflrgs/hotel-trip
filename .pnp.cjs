@@ -61,6 +61,7 @@ const RAW_RUNTIME_STATE =
           ["react-copy-to-clipboard", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:5.1.0"],\
           ["react-day-picker", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:8.10.1"],\
           ["react-dom", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:18.3.1"],\
+          ["react-hook-form", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:7.51.5"],\
           ["react-infinite-scroll-component", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:6.1.0"],\
           ["react-markdown", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:9.0.1"],\
           ["react-query", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:3.39.3"],\
@@ -12267,6 +12268,7 @@ const RAW_RUNTIME_STATE =
           ["react-copy-to-clipboard", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:5.1.0"],\
           ["react-day-picker", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:8.10.1"],\
           ["react-dom", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:18.3.1"],\
+          ["react-hook-form", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:7.51.5"],\
           ["react-infinite-scroll-component", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:6.1.0"],\
           ["react-markdown", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:9.0.1"],\
           ["react-query", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:3.39.3"],\
@@ -18329,6 +18331,28 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/react-error-overlay-npm-6.0.11-021cdeaa92-10c0.zip/node_modules/react-error-overlay/",\
         "packageDependencies": [\
           ["react-error-overlay", "npm:6.0.11"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["react-hook-form", [\
+      ["npm:7.51.5", {\
+        "packageLocation": "../../../.yarn/berry/cache/react-hook-form-npm-7.51.5-1449dfc378-10c0.zip/node_modules/react-hook-form/",\
+        "packageDependencies": [\
+          ["react-hook-form", "npm:7.51.5"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:7.51.5", {\
+        "packageLocation": "./.yarn/__virtual__/react-hook-form-virtual-8ccadf01fd/4/.yarn/berry/cache/react-hook-form-npm-7.51.5-1449dfc378-10c0.zip/node_modules/react-hook-form/",\
+        "packageDependencies": [\
+          ["react-hook-form", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:7.51.5"],\
+          ["@types/react", "npm:18.3.3"],\
+          ["react", "npm:18.3.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
         ],\
         "linkType": "HARD"\
       }]\
