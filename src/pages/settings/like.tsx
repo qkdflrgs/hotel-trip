@@ -1,4 +1,4 @@
-import FixedBottomButton from '@/components/shared/FixedBottomButton'
+import FixedBottomButton from '@shared/FixedBottomButton'
 import useEditLike from '@components/settings/like/hooks/useEditLike'
 import ListRow from '@shared/ListRow'
 import { useEffect, useState } from 'react'

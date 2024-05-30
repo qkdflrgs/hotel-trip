@@ -1,4 +1,4 @@
-import FixedBottomButton from '@/components/shared/FixedBottomButton'
+import FixedBottomButton from '@shared/FixedBottomButton'
 import RangePicker from '@shared/RangePicker'
 import qs from 'qs'
 import { useEffect, useState } from 'react'

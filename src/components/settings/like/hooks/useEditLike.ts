@@ -2,7 +2,7 @@ import { Like } from '@models/like'
 import useLike from '@hooks/like/useLike'
 import { useCallback, useEffect, useState } from 'react'
 import { updateOrder } from '@remote/like'
-import { useAlertContext } from '@/contexts/AlertContext'
+import { useAlertContext } from '@contexts/AlertContext'
 import { useQueryClient } from 'react-query'
 
 function useEditLike() {

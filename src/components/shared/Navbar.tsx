@@ -6,6 +6,7 @@ import Flex from './Flex'
 import { useCallback } from 'react'
 import useUser from '@hooks/auth/useUser'
 import Spacing from './Spacing'
+import Text from './Text'
 
 function Navbar() {
   const user = useUser()
@@ -59,7 +60,9 @@ function Navbar() {
       align={'center'}
       css={navbarContainerStyles}
     >
-      <Link to="/">홈</Link>
+      <Link to="/">
+        <Text bold={true}>HOTEL TRIP</Text>
+      </Link>
       {renderButton()}
     </Flex>
   )

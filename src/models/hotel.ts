@@ -29,4 +29,23 @@ export interface Hotel {
   starRating: number
   events?: Event
   recommendHotel: string[]
+  forms: ReservationForm[]
 }
+
+export interface BaseForm {
+  id: string
+  label: string
+  required: string
+  helpMessage?: string
+}
+
+export interface TextFieldForm extends BaseForm {
+  type: 'TEXT_FIELD'
+}
+
+export interface SelectFieldForm extends BaseForm {
+  type: 'SELECT'
+  options: Array<{ label: string; value: string }>
+}
+
+export type ReservationForm = TextFieldForm | SelectFieldForm
