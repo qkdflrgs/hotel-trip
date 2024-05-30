@@ -5,6 +5,7 @@ import Button from './Button'
 import Flex from './Flex'
 import { useCallback } from 'react'
 import useUser from '@hooks/auth/useUser'
+import Spacing from './Spacing'
 
 function Navbar() {
   const user = useUser()
@@ -15,18 +16,29 @@ function Navbar() {
   const renderButton = useCallback(() => {
     if (user != null) {
       return (
-        <Link to="/my">
-          <img
-            src={
-              user.photoURL ??
-              'https://cdn4.iconfinder.com/data/icons/music-ui-solid-24px/24/user_account_profile-2-512.png'
-            }
-            alt="유저 프로필 이미지"
-            width={40}
-            height={40}
-            style={{ borderRadius: '100%' }}
-          />
-        </Link>
+        <Flex align="center">
+          <Link to="/settings">
+            <img
+              src="https://cdn4.iconfinder.com/data/icons/multimedia-75/512/multimedia-06-256.png"
+              alt="설정 아이콘"
+              width={40}
+              height={40}
+            />
+          </Link>
+          <Spacing size={8} direction="horizontal" />
+          <Link to="/my">
+            <img
+              src={
+                user.photoURL ??
+                'https://cdn4.iconfinder.com/data/icons/music-ui-solid-24px/24/user_account_profile-2-512.png'
+              }
+              alt="유저 프로필 이미지"
+              width={40}
+              height={40}
+              style={{ borderRadius: '100%' }}
+            />
+          </Link>
+        </Flex>
       )
     }
 
