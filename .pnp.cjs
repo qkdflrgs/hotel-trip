@@ -59,6 +59,7 @@ const RAW_RUNTIME_STATE =
           ["react", "npm:18.3.1"],\
           ["react-beautiful-dnd", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:13.1.1"],\
           ["react-copy-to-clipboard", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:5.1.0"],\
+          ["react-day-picker", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:8.10.1"],\
           ["react-dom", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:18.3.1"],\
           ["react-infinite-scroll-component", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:6.1.0"],\
           ["react-markdown", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:9.0.1"],\
@@ -12264,6 +12265,7 @@ const RAW_RUNTIME_STATE =
           ["react", "npm:18.3.1"],\
           ["react-beautiful-dnd", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:13.1.1"],\
           ["react-copy-to-clipboard", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:5.1.0"],\
+          ["react-day-picker", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:8.10.1"],\
           ["react-dom", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:18.3.1"],\
           ["react-infinite-scroll-component", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:6.1.0"],\
           ["react-markdown", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:9.0.1"],\
@@ -18217,6 +18219,32 @@ const RAW_RUNTIME_STATE =
         ],\
         "packagePeers": [\
           "@types/react",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["react-day-picker", [\
+      ["npm:8.10.1", {\
+        "packageLocation": "../../../.yarn/berry/cache/react-day-picker-npm-8.10.1-708bfe7c0e-10c0.zip/node_modules/react-day-picker/",\
+        "packageDependencies": [\
+          ["react-day-picker", "npm:8.10.1"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:8.10.1", {\
+        "packageLocation": "./.yarn/__virtual__/react-day-picker-virtual-3eb69843ae/4/.yarn/berry/cache/react-day-picker-npm-8.10.1-708bfe7c0e-10c0.zip/node_modules/react-day-picker/",\
+        "packageDependencies": [\
+          ["react-day-picker", "virtual:45061009b64fdda5081a1295e19c5079ecdf3449ac6a591dda996324fc24c8528c05a90ce7c55672bfae0d560b9106b9497a1da9ae4e01a2c7dadf94a10fe0fb#npm:8.10.1"],\
+          ["@types/date-fns", null],\
+          ["@types/react", "npm:18.3.3"],\
+          ["date-fns", "npm:3.6.0"],\
+          ["react", "npm:18.3.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/date-fns",\
+          "@types/react",\
+          "date-fns",\
           "react"\
         ],\
         "linkType": "HARD"\
